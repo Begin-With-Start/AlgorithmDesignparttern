@@ -16,6 +16,7 @@ import java.util.LinkedList;
 
 import designpartern.minifly.com.designparttern.algorithm.AjldActivity;
 import designpartern.minifly.com.designparttern.algorithm.BinarySearchActivity;
+import designpartern.minifly.com.designparttern.algorithm.InsertSortingActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -43,6 +44,11 @@ public class MainActivity extends AppCompatActivity {
         myBean = new MyBean();
         myBean.setTitle("二分查找的算法");
         myBean.setClassName(BinarySearchActivity.class);
+        list.add(myBean);
+
+        myBean = new MyBean();
+        myBean.setTitle("插入排序算法(从小到大的排序顺序)");
+        myBean.setClassName(InsertSortingActivity.class);
         list.add(myBean);
 
         MyAdapter myAdapter = new MyAdapter(this, list);
