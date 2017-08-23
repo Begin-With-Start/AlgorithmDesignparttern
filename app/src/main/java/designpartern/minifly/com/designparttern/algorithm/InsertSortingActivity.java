@@ -26,7 +26,7 @@ public class InsertSortingActivity extends AppCompatActivity {
         mInsertSortingId = (TextView) findViewById(R.id.insert_sorting_id);
         mInsertSortingContentId = (TextView) findViewById(R.id.insert_sorting_content_id);
 
-        mInsertSortingContentId.setText("new int[]{7,6,5,4,3,2,1} \n 排序之后的顺序是(最差情况)：  " + printArray(insertSorting(new int[]{7,6,5,4,3,2,1})) + " \n 循环的次数：" + count);
+        mInsertSortingContentId.setText("new int[]{7,6,5,4,3,2,1} \n 排序之后的顺序是：  " + printArray(insertSorting(new int[]{7,6,5,4,3,2,1})) + " \n 循环的次数(最差情况)：" + count);
 
         mInsertSortingId.setText(
                 "    /**\n" +

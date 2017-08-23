@@ -19,7 +19,8 @@
         <activity android:name=".designparttern23.FactoryDesignActivity" />
         <activity android:name=".algorithm.AjldActivity" />
         <activity android:name=".algorithm.BinarySearchActivity" />
-        <activity android:name=".algorithm.InsertSortingActivity"></activity>
+        <activity android:name=".algorithm.InsertSortingActivity" />
+        <activity android:name=".algorithm.BubbleSortingActivity"></activity>
     </application>
 
 </manifest>
