@@ -34,10 +34,6 @@ public class AjldActivity extends AppCompatActivity {
 
     /**
      * 欧几里得算法，算最大公因数
-     *
-     * @param m
-     * @param n
-     * @return
      */
     public long gcd(long m, long n) {
         while (n != 0) {

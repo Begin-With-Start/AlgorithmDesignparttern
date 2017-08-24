@@ -20,7 +20,8 @@
         <activity android:name=".algorithm.AjldActivity" />
         <activity android:name=".algorithm.BinarySearchActivity" />
         <activity android:name=".algorithm.InsertSortingActivity" />
-        <activity android:name=".algorithm.BubbleSortingActivity"></activity>
+        <activity android:name=".algorithm.BubbleSortingActivity" />
+        <activity android:name=".algorithm.ShellSortActivity"></activity>
     </application>
 
 </manifest>

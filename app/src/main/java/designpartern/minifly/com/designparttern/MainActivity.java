@@ -18,6 +18,7 @@ import designpartern.minifly.com.designparttern.algorithm.AjldActivity;
 import designpartern.minifly.com.designparttern.algorithm.BinarySearchActivity;
 import designpartern.minifly.com.designparttern.algorithm.BubbleSortingActivity;
 import designpartern.minifly.com.designparttern.algorithm.InsertSortingActivity;
+import designpartern.minifly.com.designparttern.algorithm.ShellSortActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -55,6 +56,11 @@ public class MainActivity extends AppCompatActivity {
         myBean = new MyBean();
         myBean.setTitle("冒泡排序算法(从小到大的排序顺序)");
         myBean.setClassName(BubbleSortingActivity.class);
+        list.add(myBean);
+
+        myBean = new MyBean();
+        myBean.setTitle("希尔排序算法(小到大)一个插入排序的变种，旨在突破二次时间屏障O(n2)");
+        myBean.setClassName(ShellSortActivity.class);
         list.add(myBean);
 
         MyAdapter myAdapter = new MyAdapter(this, list);
