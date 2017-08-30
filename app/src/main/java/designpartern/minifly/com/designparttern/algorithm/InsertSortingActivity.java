@@ -1,9 +1,9 @@
 package designpartern.minifly.com.designparttern.algorithm;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
+import designpartern.minifly.com.designparttern.BaseActivity;
 import designpartern.minifly.com.designparttern.R;
 import designpartern.minifly.com.designparttern.tools.LogUtils;
 
@@ -12,7 +12,7 @@ import designpartern.minifly.com.designparttern.tools.LogUtils;
  * 最坏情况：O(n2) 当所有的数据的顺序都是相反的时候
  * 往手里插牌的一个感觉
  */
-public class InsertSortingActivity extends AppCompatActivity {
+public class InsertSortingActivity extends BaseActivity {
 
     private TextView mInsertSortingId;
     private TextView mInsertSortingContentId;

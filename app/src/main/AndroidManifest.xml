@@ -8,8 +8,10 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/design"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        android:theme="@style/allActivityTheme">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/mainActivityTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,7 +23,8 @@
         <activity android:name=".algorithm.BinarySearchActivity" />
         <activity android:name=".algorithm.InsertSortingActivity" />
         <activity android:name=".algorithm.BubbleSortingActivity" />
-        <activity android:name=".algorithm.ShellSortActivity"></activity>
+        <activity android:name=".algorithm.ShellSortActivity" />
+        <activity android:name=".algorithm.MergeSortActivity"></activity>
     </application>
 
 </manifest>

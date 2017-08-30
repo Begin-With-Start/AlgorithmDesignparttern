@@ -1,15 +1,15 @@
 package designpartern.minifly.com.designparttern.algorithm;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
+import designpartern.minifly.com.designparttern.BaseActivity;
 import designpartern.minifly.com.designparttern.R;
 
 /**
  * 欧几里得算法，算最大公因数
  */
-public class AjldActivity extends AppCompatActivity {
+public class AjldActivity extends BaseActivity {
 
     private TextView mTextView;
     private TextView mAlgorithmContentId;

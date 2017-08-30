@@ -1,15 +1,15 @@
 package designpartern.minifly.com.designparttern.algorithm;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
+import designpartern.minifly.com.designparttern.BaseActivity;
 import designpartern.minifly.com.designparttern.R;
 
 /**
  * 二分查找的算法
  */
-public class BinarySearchActivity extends AppCompatActivity {
+public class BinarySearchActivity extends BaseActivity {
 
     private TextView mBinarySearchComputeId;
     private TextView binary_search_content_id;

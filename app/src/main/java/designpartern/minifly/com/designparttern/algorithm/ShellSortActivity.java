@@ -1,12 +1,12 @@
 package designpartern.minifly.com.designparttern.algorithm;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
+import designpartern.minifly.com.designparttern.BaseActivity;
 import designpartern.minifly.com.designparttern.R;
 
-public class ShellSortActivity extends AppCompatActivity {
+public class ShellSortActivity extends BaseActivity {
 
     private TextView mShellSortingId;
     private TextView mShellSortingContentId;

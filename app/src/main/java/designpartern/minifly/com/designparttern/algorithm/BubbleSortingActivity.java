@@ -1,9 +1,9 @@
 package designpartern.minifly.com.designparttern.algorithm;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
+import designpartern.minifly.com.designparttern.BaseActivity;
 import designpartern.minifly.com.designparttern.R;
 
 /**
@@ -12,7 +12,7 @@ import designpartern.minifly.com.designparttern.R;
  * 最好情况： O(n)
  */
 
-public class BubbleSortingActivity extends AppCompatActivity {
+public class BubbleSortingActivity extends BaseActivity {
 
     private TextView mBubblesortContentId;
     private TextView mBubblesortComputeId;
