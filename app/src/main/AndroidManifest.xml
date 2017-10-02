@@ -25,6 +25,7 @@
         <activity android:name=".algorithm.BubbleSortingActivity" />
         <activity android:name=".algorithm.ShellSortActivity" />
         <activity android:name=".algorithm.MergeSortActivity"></activity>
+        <activity android:name=".algorithm.FBNQDataActivity"></activity>
     </application>
 
 </manifest>

@@ -17,6 +17,7 @@ import java.util.LinkedList;
 import designpartern.minifly.com.designparttern.algorithm.AjldActivity;
 import designpartern.minifly.com.designparttern.algorithm.BinarySearchActivity;
 import designpartern.minifly.com.designparttern.algorithm.BubbleSortingActivity;
+import designpartern.minifly.com.designparttern.algorithm.FBNQDataActivity;
 import designpartern.minifly.com.designparttern.algorithm.InsertSortingActivity;
 import designpartern.minifly.com.designparttern.algorithm.MergeSortActivity;
 import designpartern.minifly.com.designparttern.algorithm.ShellSortActivity;
@@ -38,6 +39,12 @@ public class MainActivity extends AppCompatActivity {
 
         LinkedList<MyBean> list = new LinkedList<>();
         MyBean myBean;
+
+
+        myBean = new MyBean();
+        myBean.setTitle("斐波那契数栈的实现方式");
+        myBean.setClassName(FBNQDataActivity.class);
+        list.add(myBean);
 
         myBean = new MyBean();
         myBean.setTitle("最大公因数的算法(欧几里得)");
