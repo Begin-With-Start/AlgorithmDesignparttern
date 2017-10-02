@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import java.util.LinkedList;
 
+import designpartern.minifly.com.designparttern.adapter.MyBeanViewProvider;
 import designpartern.minifly.com.designparttern.algorithm.AjldActivity;
 import designpartern.minifly.com.designparttern.algorithm.BinarySearchActivity;
 import designpartern.minifly.com.designparttern.algorithm.BubbleSortingActivity;
@@ -21,6 +22,7 @@ import designpartern.minifly.com.designparttern.algorithm.FBNQDataActivity;
 import designpartern.minifly.com.designparttern.algorithm.InsertSortingActivity;
 import designpartern.minifly.com.designparttern.algorithm.MergeSortActivity;
 import designpartern.minifly.com.designparttern.algorithm.ShellSortActivity;
+import me.drakeet.multitype.MultiTypeAdapter;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -37,50 +39,71 @@ public class MainActivity extends AppCompatActivity {
         mDesignPartternListview = (RecyclerView) findViewById(R.id.design_parttern_listview);
         mDesignPartternListview.setLayoutManager(new LinearLayoutManager(this));
 
-        LinkedList<MyBean> list = new LinkedList<>();
-        MyBean myBean;
+        LinkedList<MyBean> listSecond = new LinkedList<>();
+        MyBean myBeanSecond;
 
 
-        myBean = new MyBean();
-        myBean.setTitle("斐波那契数栈的实现方式");
-        myBean.setClassName(FBNQDataActivity.class);
-        list.add(myBean);
+        myBeanSecond = new MyBean();
+        myBeanSecond.setClassName(Object.class);
+        myBeanSecond.setTitle("标题---------基本数据结构---------");
+        listSecond.add(myBeanSecond);
 
-        myBean = new MyBean();
-        myBean.setTitle("最大公因数的算法(欧几里得)");
-        myBean.setClassName(AjldActivity.class);
-        list.add(myBean);
 
-        myBean = new MyBean();
-        myBean.setTitle("二分查找的算法");
-        myBean.setClassName(BinarySearchActivity.class);
-        list.add(myBean);
+        
 
-        myBean = new MyBean();
-        myBean.setTitle("插入排序算法(从小到大的排序顺序)");
-        myBean.setClassName(InsertSortingActivity.class);
-        list.add(myBean);
 
-        myBean = new MyBean();
-        myBean.setTitle("冒泡排序算法(从小到大的排序顺序)");
-        myBean.setClassName(BubbleSortingActivity.class);
-        list.add(myBean);
 
-        myBean = new MyBean();
-        myBean.setTitle("希尔排序算法(小到大)一个插入排序的变种，旨在突破二次时间屏障O(n2)");
-        myBean.setClassName(ShellSortActivity.class);
-        list.add(myBean);
+        myBeanSecond = new MyBean();
+        myBeanSecond.setTitle("标题------------算法相关------------");
+        myBeanSecond.setClassName(Object.class);
+        listSecond.add(myBeanSecond);
 
-        myBean = new MyBean();
-        myBean.setTitle("归并排序的例子()");
-        myBean.setClassName(MergeSortActivity.class);
-        list.add(myBean);
+        myBeanSecond = new MyBean();
+        myBeanSecond.setTitle("斐波那契数栈的实现方式");
+        myBeanSecond.setClassName(FBNQDataActivity.class);
+        listSecond.add(myBeanSecond);
 
-        MyAdapter myAdapter = new MyAdapter(this, list);
-        mDesignPartternListview.setAdapter(myAdapter);
-        myAdapter.notifyDataSetChanged();
+        myBeanSecond = new MyBean();
+        myBeanSecond.setTitle("最大公因数的算法(欧几里得)");
+        myBeanSecond.setClassName(AjldActivity.class);
+        listSecond.add(myBeanSecond);
+
+        myBeanSecond = new MyBean();
+        myBeanSecond.setTitle("二分查找的算法");
+        myBeanSecond.setClassName(BinarySearchActivity.class);
+        listSecond.add(myBeanSecond);
+
+        myBeanSecond = new MyBean();
+        myBeanSecond.setTitle("插入排序算法(从小到大的排序顺序)");
+        myBeanSecond.setClassName(InsertSortingActivity.class);
+        listSecond.add(myBeanSecond);
+
+        myBeanSecond = new MyBean();
+        myBeanSecond.setTitle("冒泡排序算法(从小到大的排序顺序)");
+        myBeanSecond.setClassName(BubbleSortingActivity.class);
+        listSecond.add(myBeanSecond);
+
+        myBeanSecond = new MyBean();
+        myBeanSecond.setTitle("希尔排序算法(小到大)一个插入排序的变种，旨在突破二次时间屏障O(n2)");
+        myBeanSecond.setClassName(ShellSortActivity.class);
+        listSecond.add(myBeanSecond);
+
+        myBeanSecond = new MyBean();
+        myBeanSecond.setTitle("归并排序的例子()");
+        myBeanSecond.setClassName(MergeSortActivity.class);
+        listSecond.add(myBeanSecond);
+
+
+        secondAdapter = new MultiTypeAdapter(listSecond);
+//        MultiTypeAdapter
+        /* 注册类型和 View 的对应关系 */
+        secondAdapter.register(MyBean.class, new MyBeanViewProvider(this));
+//        secondAdapter.register(MyBean.class, new SongViewProvider());
+
+        mDesignPartternListview.setAdapter(secondAdapter);
+        secondAdapter.notifyDataSetChanged();
     }
-
+    private MultiTypeAdapter secondAdapter;
 
     class MyAdapter extends RecyclerView.Adapter {
         private Context context;
@@ -134,9 +157,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    class MyBean<T> {
+    public class MyBean {
         private String title;
-        private Class<T> className;
+        private Class className;
 
         public String getTitle() {
             return title;
@@ -146,11 +169,11 @@ public class MainActivity extends AppCompatActivity {
             this.title = title;
         }
 
-        public Class<T> getClassName() {
+        public Class getClassName() {
             return className;
         }
 
-        public void setClassName(Class<T> className) {
+        public void setClassName(Class className) {
             this.className = className;
         }
     }
