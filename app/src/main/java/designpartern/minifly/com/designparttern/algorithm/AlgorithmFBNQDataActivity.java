@@ -6,7 +6,7 @@ import android.widget.TextView;
 
 import designpartern.minifly.com.designparttern.R;
 
-public class FBNQDataActivity extends AppCompatActivity {
+public class AlgorithmFBNQDataActivity extends AppCompatActivity {
     private TextView contentTxt,computeTxt;
     private int count;
 
@@ -29,6 +29,11 @@ public class FBNQDataActivity extends AppCompatActivity {
                 "    }");
     }
 
+    /**
+     * 递归方法来求斐波那契数，中断条件：当i=1返回1 ， 当i=0 返回0
+     * @param i
+     * @return
+     */
     public int fbnq(int i){
         if(i<2){
             return  i;

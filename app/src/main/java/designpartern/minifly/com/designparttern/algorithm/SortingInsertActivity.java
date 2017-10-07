@@ -12,7 +12,7 @@ import designpartern.minifly.com.designparttern.tools.LogUtils;
  * 最坏情况：O(n2) 当所有的数据的顺序都是相反的时候
  * 往手里插牌的一个感觉
  */
-public class InsertSortingActivity extends BaseActivity {
+public class SortingInsertActivity extends BaseActivity {
 
     private TextView mInsertSortingId;
     private TextView mInsertSortingContentId;

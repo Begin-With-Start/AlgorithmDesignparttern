@@ -9,7 +9,7 @@ import designpartern.minifly.com.designparttern.R;
 /**
  * 二分查找的算法
  */
-public class BinarySearchActivity extends BaseActivity {
+public class SearchBinaryActivity extends BaseActivity {
 
     private TextView mBinarySearchComputeId;
     private TextView binary_search_content_id;
@@ -46,6 +46,12 @@ public class BinarySearchActivity extends BaseActivity {
                 "    }");
     }
 
+    /**
+     * 有序数组的二分查找
+     * @param array
+     * @param destInt
+     * @return
+     */
     public int binarysearchCompute(int[] array, int destInt) {
         int low = 0, high = array.length - 1;
         while (low <= high) {

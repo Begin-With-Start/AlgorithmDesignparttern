@@ -15,13 +15,13 @@ import android.widget.TextView;
 import java.util.LinkedList;
 
 import designpartern.minifly.com.designparttern.adapter.MyBeanViewProvider;
-import designpartern.minifly.com.designparttern.algorithm.AjldActivity;
-import designpartern.minifly.com.designparttern.algorithm.BinarySearchActivity;
-import designpartern.minifly.com.designparttern.algorithm.BubbleSortingActivity;
-import designpartern.minifly.com.designparttern.algorithm.FBNQDataActivity;
-import designpartern.minifly.com.designparttern.algorithm.InsertSortingActivity;
-import designpartern.minifly.com.designparttern.algorithm.MergeSortActivity;
-import designpartern.minifly.com.designparttern.algorithm.ShellSortActivity;
+import designpartern.minifly.com.designparttern.algorithm.AlgorithmAjldActivity;
+import designpartern.minifly.com.designparttern.algorithm.SearchBinaryActivity;
+import designpartern.minifly.com.designparttern.algorithm.SortingBubbleActivity;
+import designpartern.minifly.com.designparttern.algorithm.AlgorithmFBNQDataActivity;
+import designpartern.minifly.com.designparttern.algorithm.SortingInsertActivity;
+import designpartern.minifly.com.designparttern.algorithm.SortingMergeActivity;
+import designpartern.minifly.com.designparttern.algorithm.SortingShellActivity;
 import me.drakeet.multitype.MultiTypeAdapter;
 
 public class MainActivity extends AppCompatActivity {
@@ -60,37 +60,37 @@ public class MainActivity extends AppCompatActivity {
 
         myBeanSecond = new MyBean();
         myBeanSecond.setTitle("斐波那契数栈的实现方式");
-        myBeanSecond.setClassName(FBNQDataActivity.class);
+        myBeanSecond.setClassName(AlgorithmFBNQDataActivity.class);
         listSecond.add(myBeanSecond);
 
         myBeanSecond = new MyBean();
         myBeanSecond.setTitle("最大公因数的算法(欧几里得)");
-        myBeanSecond.setClassName(AjldActivity.class);
+        myBeanSecond.setClassName(AlgorithmAjldActivity.class);
         listSecond.add(myBeanSecond);
 
         myBeanSecond = new MyBean();
         myBeanSecond.setTitle("二分查找的算法");
-        myBeanSecond.setClassName(BinarySearchActivity.class);
+        myBeanSecond.setClassName(SearchBinaryActivity.class);
         listSecond.add(myBeanSecond);
 
         myBeanSecond = new MyBean();
         myBeanSecond.setTitle("插入排序算法(从小到大的排序顺序)");
-        myBeanSecond.setClassName(InsertSortingActivity.class);
+        myBeanSecond.setClassName(SortingInsertActivity.class);
         listSecond.add(myBeanSecond);
 
         myBeanSecond = new MyBean();
         myBeanSecond.setTitle("冒泡排序算法(从小到大的排序顺序)");
-        myBeanSecond.setClassName(BubbleSortingActivity.class);
+        myBeanSecond.setClassName(SortingBubbleActivity.class);
         listSecond.add(myBeanSecond);
 
         myBeanSecond = new MyBean();
         myBeanSecond.setTitle("希尔排序算法(小到大)一个插入排序的变种，旨在突破二次时间屏障O(n2)");
-        myBeanSecond.setClassName(ShellSortActivity.class);
+        myBeanSecond.setClassName(SortingShellActivity.class);
         listSecond.add(myBeanSecond);
 
         myBeanSecond = new MyBean();
         myBeanSecond.setTitle("归并排序的例子()");
-        myBeanSecond.setClassName(MergeSortActivity.class);
+        myBeanSecond.setClassName(SortingMergeActivity.class);
         listSecond.add(myBeanSecond);
 
 

@@ -6,7 +6,7 @@ import android.widget.TextView;
 import designpartern.minifly.com.designparttern.BaseActivity;
 import designpartern.minifly.com.designparttern.R;
 
-public class ShellSortActivity extends BaseActivity {
+public class SortingShellActivity extends BaseActivity {
 
     private TextView mShellSortingId;
     private TextView mShellSortingContentId;

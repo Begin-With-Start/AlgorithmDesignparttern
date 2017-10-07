@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="designpartern.minifly.com.designparttern.algorithm.AjldActivity">
+    tools:context="designpartern.minifly.com.designparttern.algorithm.AlgorithmAjldActivity">
     <TextView
         android:id="@+id/algorithm_content_id"
         android:layout_width="wrap_content"

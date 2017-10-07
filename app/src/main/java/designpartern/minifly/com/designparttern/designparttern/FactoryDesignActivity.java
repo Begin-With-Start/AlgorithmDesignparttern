@@ -1,4 +1,4 @@
-package designpartern.minifly.com.designparttern.designparttern23;
+package designpartern.minifly.com.designparttern.designparttern;
 
 import android.os.Bundle;
 

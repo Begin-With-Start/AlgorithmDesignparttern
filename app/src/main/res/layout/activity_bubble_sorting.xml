@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="designpartern.minifly.com.designparttern.algorithm.BubbleSortingActivity">
+    tools:context="designpartern.minifly.com.designparttern.algorithm.SortingBubbleActivity">
 
     <TextView
         android:id="@+id/bubblesort_content_id"

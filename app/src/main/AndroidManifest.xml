@@ -18,14 +18,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".designparttern23.FactoryDesignActivity" />
-        <activity android:name=".algorithm.AjldActivity" />
-        <activity android:name=".algorithm.BinarySearchActivity" />
-        <activity android:name=".algorithm.InsertSortingActivity" />
-        <activity android:name=".algorithm.BubbleSortingActivity" />
-        <activity android:name=".algorithm.ShellSortActivity" />
-        <activity android:name=".algorithm.MergeSortActivity"></activity>
-        <activity android:name=".algorithm.FBNQDataActivity"></activity>
+        <activity android:name=".designparttern.FactoryDesignActivity" />
+        <activity android:name=".algorithm.AlgorithmAjldActivity" />
+        <activity android:name=".algorithm.SearchBinaryActivity" />
+        <activity android:name=".algorithm.SortingInsertActivity" />
+        <activity android:name=".algorithm.SortingBubbleActivity" />
+        <activity android:name=".algorithm.SortingShellActivity" />
+        <activity android:name=".algorithm.SortingMergeActivity"></activity>
+        <activity android:name=".algorithm.AlgorithmFBNQDataActivity"></activity>
     </application>
 
 </manifest>

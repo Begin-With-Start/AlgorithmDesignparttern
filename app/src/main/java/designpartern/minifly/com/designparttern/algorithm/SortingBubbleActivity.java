@@ -12,7 +12,7 @@ import designpartern.minifly.com.designparttern.R;
  * 最好情况： O(n)
  */
 
-public class BubbleSortingActivity extends BaseActivity {
+public class SortingBubbleActivity extends BaseActivity {
 
     private TextView mBubblesortContentId;
     private TextView mBubblesortComputeId;
@@ -53,6 +53,7 @@ public class BubbleSortingActivity extends BaseActivity {
 
     /**
      * 从小到大的冒泡排序
+     * 每次将一个大数放到上次最大的之前位置，保证每趟有一个大数放到了当前最大位置。每次减少遍历次数
      */
     public int[] bubbleSort(int [] array){
         int temp = 0;

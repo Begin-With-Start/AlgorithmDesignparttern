@@ -6,7 +6,7 @@ import android.widget.TextView;
 
 import designpartern.minifly.com.designparttern.R;
 
-public class MergeSortActivity extends AppCompatActivity {
+public class SortingMergeActivity extends AppCompatActivity {
 
     private TextView mAlgorithmContentMergesortId;
     private TextView mAlgorithmComputeMergesortId;

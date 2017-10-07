@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="designpartern.minifly.com.designparttern.algorithm.BinarySearchActivity">
+    tools:context="designpartern.minifly.com.designparttern.algorithm.SearchBinaryActivity">
 
     <TextView
         android:id="@+id/binary_search_content_id"

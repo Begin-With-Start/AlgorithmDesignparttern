@@ -9,7 +9,7 @@ import designpartern.minifly.com.designparttern.R;
 /**
  * 欧几里得算法，算最大公因数
  */
-public class AjldActivity extends BaseActivity {
+public class AlgorithmAjldActivity extends BaseActivity {
 
     private TextView mTextView;
     private TextView mAlgorithmContentId;
