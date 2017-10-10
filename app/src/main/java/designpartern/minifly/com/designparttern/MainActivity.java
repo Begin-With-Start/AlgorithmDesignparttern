@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
         listSecond.add(myBeanSecond);
 
         myBeanSecond = new MyBean();
-        myBeanSecond.setTitle("归并排序的例子()");
+        myBeanSecond.setTitle("归并排序的例子(切割和合并的排序方式)");
         myBeanSecond.setClassName(SortingMergeActivity.class);
         listSecond.add(myBeanSecond);
 

@@ -8,7 +8,7 @@
 
     <TextView
         android:id="@+id/bubblesort_content_id"
-        android:layout_width="368dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text=""
         app:layout_constraintTop_toBottomOf="parent"
