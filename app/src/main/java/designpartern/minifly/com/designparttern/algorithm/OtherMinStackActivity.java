@@ -30,7 +30,9 @@ public class OtherMinStackActivity extends BaseActivity{
         LogUtils.showErrLog("最小值是：   " + minStack.getMinData());
         minStack.pop();
         minStack.pop();
-        text.setText("最小值是：   " + minStack.getMinData() + " 当前栈是" + minStack.getStack().toString() + "  最小栈是： "  + minStack.getMinStack().toString() );
+        text.setText("最小值是：   " + minStack.getMinData() + " 当前栈是" + minStack.getStack().toString() + "  最小栈是： "  + minStack.getMinStack().toString()+"\n" +
+                "最小栈问题分析：解法一般两种：一种是在最小栈中维护两个栈，一个栈用来记录每次的最小值得下标(比每次记录前一个栈的数据的空间复杂度低一些)" +
+                "一种是在栈中维护一个minvalue，用来记录在栈中每次的最小值，(要是栈的数据比较复杂还是推荐记录栈数据的下标比较的节省内存)");
 
     }
 
