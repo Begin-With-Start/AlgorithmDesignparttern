@@ -48,6 +48,7 @@ public class SearchBinaryActivity extends BaseActivity {
 
     /**
      * 有序数组的二分查找
+     * 建立在数组是有序数组的基础上
      * @param array
      * @param destInt
      * @return
