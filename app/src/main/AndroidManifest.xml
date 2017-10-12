@@ -24,8 +24,9 @@
         <activity android:name=".algorithm.SortingInsertActivity" />
         <activity android:name=".algorithm.SortingBubbleActivity" />
         <activity android:name=".algorithm.SortingShellActivity" />
-        <activity android:name=".algorithm.SortingMergeActivity"></activity>
-        <activity android:name=".algorithm.AlgorithmFBNQDataActivity"></activity>
+        <activity android:name=".algorithm.SortingMergeActivity" />
+        <activity android:name=".algorithm.AlgorithmFBNQDataActivity" />
+        <activity android:name=".algorithm.OtherMinStackActivity"></activity>
     </application>
 
 </manifest>

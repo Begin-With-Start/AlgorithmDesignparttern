@@ -16,6 +16,7 @@ import java.util.LinkedList;
 
 import designpartern.minifly.com.designparttern.adapter.MyBeanViewProvider;
 import designpartern.minifly.com.designparttern.algorithm.AlgorithmAjldActivity;
+import designpartern.minifly.com.designparttern.algorithm.OtherMinStackActivity;
 import designpartern.minifly.com.designparttern.algorithm.SearchBinaryActivity;
 import designpartern.minifly.com.designparttern.algorithm.SortingBubbleActivity;
 import designpartern.minifly.com.designparttern.algorithm.AlgorithmFBNQDataActivity;
@@ -91,6 +92,11 @@ public class MainActivity extends AppCompatActivity {
         myBeanSecond = new MyBean();
         myBeanSecond.setTitle("归并排序的例子(切割和合并的排序方式)");
         myBeanSecond.setClassName(SortingMergeActivity.class);
+        listSecond.add(myBeanSecond);
+
+        myBeanSecond = new MyBean();
+        myBeanSecond.setTitle("其他算法----最小栈算法");
+        myBeanSecond.setClassName(OtherMinStackActivity.class);
         listSecond.add(myBeanSecond);
 
 
